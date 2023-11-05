@@ -41,3 +41,13 @@ public constructor(userService : UserService, httpService : HttpService, endPoin
 
 }
 ```
+- Notice that we're no longer using new to create instance of of our dependencies
+- it's already passed in the constructor and already initialized
+- Using this way Profile Service is no longer responsible to create this instance it does not need to know how to create this instance
+- of its dependencies anymore because it received them from the constructor already
+
+Question : Who does all of these initialization and instanciation of the dependencies : 
+
+Answer: DI container
+
+
